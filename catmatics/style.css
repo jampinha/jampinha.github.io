@@ -1,0 +1,139 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+html {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  width: 640px;
+  height: 400px;
+  background-color: #6b6b6b;
+  background-image: url('./assets/cat.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  /* border: 1px solid white; */
+}
+
+body, button {
+  cursor: url('./assets/catpaw_cursor.png'), auto;
+}
+
+body:active, button:active {
+  cursor: url('./assets/catpaw_cursor_onclick.png'), auto;
+}
+
+.body-loading { background-image: url('./assets/eyeless_cat.png'); }
+.body-ready { background-image: url('./assets/cat.png'); }
+
+#game {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+#topbar {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  color: white;
+  padding: 1em;
+}
+
+#topbar > #hearts {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+#topbar > #level {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+#topbar > #hearts,
+#topbar > #level {
+  width: 150px;
+}
+
+#scene {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-self: center;
+}
+
+#foobar {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  color: white;
+  padding: 1em;
+}
+
+#foobar > div:first-child {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+#foobar > div:last-child {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+div.heart {
+  width: 26px;
+  height: 24px;
+  display: inline-flex;
+}
+
+.heart.full { background-image: url('./assets/heart.png'); }
+.heart.dead { background-image: url('./assets/dead_heart.png'); }
+.heart.grey { background-image: url('./assets/grey_heart.png'); }
+
+#expression {
+  text-align: center;
+}
+
+#stage {
+  font-size: 2em;
+  color: white;
+}
+
+#puzzle {
+  font-weight: bold;
+  font-size: 2em;
+  color: #383838;
+}
+
+#choices {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+}
+
+button.bone {
+  width: 150px;
+  height: 66px;
+  border: none;
+  background: transparent;
+  background-image: url('./assets/bone.png');
+  font-weight: bold;
+  font-size: 2em;
+  outline: none;
+}
+
+button.bone:active {
+  background-color: white;
+}
+
+#points, #combos {
+  font-size: 2em;
+}

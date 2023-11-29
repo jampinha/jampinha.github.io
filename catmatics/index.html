@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cathematics (Beta)</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="game">
+    <div id="topbar">
+      <div id="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+      </div>
+      <div id="expression">
+        <div id="stage"></div>
+        <br>
+        <div id="puzzle"></div>
+      </div>
+      <div id="level">
+        <span></span>
+      </div>
+    </div>
+    <main id="scene">
+      <div id="choices">
+        <button class="bone"></button>
+        <button class="bone"></button>
+        <button class="bone"></button>
+      </div>
+    </main>
+    <div id="foobar">
+      <div>
+        <span>Best</span><br><span id="combos"></span>
+      </div>
+      <div>
+        <span>Score</span><br><span id="points"></span>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/math.min.js"></script>
+  <script src="./scripts/mechanics.js"></script>
+  <script src="./scripts/interface.js"></script>
+  <script src="./scripts/player.js"></script>
+  <script src="./scripts/game.js"></script>
+  <script>
+    $(document).ready(function(){
+      var Cathematics = new Game()
+    })
+  </script>
+</body>
+</html>
